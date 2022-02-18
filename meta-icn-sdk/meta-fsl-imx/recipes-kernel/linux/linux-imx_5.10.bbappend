@@ -1,0 +1,8 @@
+FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
+SRCBRANCH = "j850"
+LOCALVERSION = "-${SRCBRANCH}"
+KERNEL_SRC = "git://git@192.168.200.162:/j800_kernel.git;protocol=ssh;branch=${SRCBRANCH}"
+SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
+SRCREV = "cc74202735d57eb87cad7eef5d36b312dc9e4017"
+SCMVERSION = "n"
+
